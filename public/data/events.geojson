@@ -1,9 +1,14 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generatedAt": "2026-11-03T00:43:48.931446Z",
-    "region": "Greater Seattle Area",
-    "totalCount": 25
+    "generatedAt": "2026-11-03T00:50:25.938163Z",
+    "totalCount": 27,
+    "sources": [
+      "KCLS",
+      "SPL",
+      "Woodland Park Zoo",
+      "Seattle Aquarium"
+    ]
   },
   "features": [
     {
@@ -286,7 +291,194 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_1",
+      "id": "evt_venue_woodland_park_zoo_20261107_1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3543,
+          47.6685
+        ]
+      },
+      "properties": {
+        "title": "Penguin & Otter Feeding Talk (企鹅与水獭保育喂食解说)",
+        "summary": "饲养员现场投喂洪堡企鹅与北美水獭，讲解海洋与湿地生物习性，适合全年龄儿童近距离观察。",
+        "organizer": "Woodland Park Zoo",
+        "category": "nature_animals",
+        "location": {
+          "venueName": "Woodland Park Zoo (林地公园动物园)",
+          "address": "5500 Phinney Ave N, Seattle, WA 98103",
+          "city": "Seattle",
+          "region": "north",
+          "googleMapsUrl": "https://maps.google.com/?q=Woodland+Park+Zoo+(林地公园动物园)"
+        },
+        "schedule": {
+          "startDate": "2026-11-07",
+          "endDate": "2026-11-07",
+          "timeSlot": "morning",
+          "displayTime": "周末 · 11:00 & 14:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "outdoor",
+          "isFree": false,
+          "priceLabel": "需购门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_lot"
+        },
+        "source": {
+          "originalUrl": "https://www.zoo.org",
+          "sourceName": "Woodland Park Zoo"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_woodland_park_zoo_20261108_2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3543,
+          47.6685
+        ]
+      },
+      "properties": {
+        "title": "Zoomazium Nature Play (室内自然探索与攀爬乐园)",
+        "summary": "全天候恒温室内生态游戏区，提供空心巨树攀爬、感官探索台和幼儿大肢体运动区，婴儿与学步儿友好。",
+        "organizer": "Woodland Park Zoo",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "Woodland Park Zoo (林地公园动物园)",
+          "address": "5500 Phinney Ave N, Seattle, WA 98103",
+          "city": "Seattle",
+          "region": "north",
+          "googleMapsUrl": "https://maps.google.com/?q=Woodland+Park+Zoo+(林地公园动物园)"
+        },
+        "schedule": {
+          "startDate": "2026-11-08",
+          "endDate": "2026-11-08",
+          "timeSlot": "afternoon",
+          "displayTime": "全天开放 · 09:30–16:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "需购门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_lot"
+        },
+        "source": {
+          "originalUrl": "https://www.zoo.org",
+          "sourceName": "Woodland Park Zoo"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_seattle_aquarium_20261107_3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3425,
+          47.6075
+        ]
+      },
+      "properties": {
+        "title": "Diver Show & Tide Pool Touch (水下潜水员互动与潮间带触摸)",
+        "summary": "穿戴潜水装备的解说员在巨型穹顶水槽中与游客互动，伴随生命海滩触摸池亲手感知海星与海葵。",
+        "organizer": "Seattle Aquarium",
+        "category": "nature_animals",
+        "location": {
+          "venueName": "Seattle Aquarium (西雅图水族馆 & Ocean Pavilion)",
+          "address": "1483 Alaskan Way Pier 59, Seattle, WA 98101",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Seattle+Aquarium+(西雅图水族馆+&+Ocean+Pavilion)"
+        },
+        "schedule": {
+          "startDate": "2026-11-07",
+          "endDate": "2026-11-07",
+          "timeSlot": "afternoon",
+          "displayTime": "周末 · 11:30 & 13:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "需购门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.seattleaquarium.org",
+          "sourceName": "Seattle Aquarium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_seattle_aquarium_20261108_4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3425,
+          47.6075
+        ]
+      },
+      "properties": {
+        "title": "Ocean Pavilion Discovery (全新海洋馆热带珊瑚礁探索)",
+        "summary": "漫步于360度热带珊瑚礁环形通道，近距离观察斑纹鹰鳐与热带鱼群，体验声光生态互动装置。",
+        "organizer": "Seattle Aquarium",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "Seattle Aquarium (西雅图水族馆 & Ocean Pavilion)",
+          "address": "1483 Alaskan Way Pier 59, Seattle, WA 98101",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Seattle+Aquarium+(西雅图水族馆+&+Ocean+Pavilion)"
+        },
+        "schedule": {
+          "startDate": "2026-11-08",
+          "endDate": "2026-11-08",
+          "timeSlot": "morning",
+          "displayTime": "全天开放 · 09:30–17:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "需购门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.seattleaquarium.org",
+          "sourceName": "Seattle Aquarium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_1",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -307,8 +499,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "afternoon",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -332,7 +524,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_2",
+      "id": "evt_kcls_20261102_2",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -353,8 +545,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "morning",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -378,7 +570,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_4",
+      "id": "evt_kcls_20261102_4",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -399,8 +591,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "morning",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -425,7 +617,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_5",
+      "id": "evt_kcls_20261102_5",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -446,8 +638,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Renton+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "afternoon",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -471,7 +663,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_7",
+      "id": "evt_kcls_20261102_7",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -492,8 +684,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "afternoon",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -517,7 +709,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_8",
+      "id": "evt_kcls_20261102_8",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -538,8 +730,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "afternoon",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -563,7 +755,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_9",
+      "id": "evt_kcls_20261102_9",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -584,8 +776,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "afternoon",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -610,7 +802,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_10",
+      "id": "evt_kcls_20261102_10",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -631,8 +823,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "morning",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -656,7 +848,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_15",
+      "id": "evt_kcls_20261102_15",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -677,8 +869,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Renton+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "morning",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -702,7 +894,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_18",
+      "id": "evt_kcls_20261102_18",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -723,8 +915,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Mercer+Island+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "afternoon",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -749,7 +941,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_19",
+      "id": "evt_kcls_20261102_19",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -770,8 +962,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "morning",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -796,7 +988,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_20",
+      "id": "evt_kcls_20261102_20",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -817,8 +1009,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "morning",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -842,7 +1034,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_21",
+      "id": "evt_kcls_20261102_21",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -863,8 +1055,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "afternoon",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -889,7 +1081,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_22",
+      "id": "evt_kcls_20261102_22",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -910,8 +1102,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "morning",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -935,7 +1127,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_25",
+      "id": "evt_kcls_20261102_25",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -956,8 +1148,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Mercer+Island+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "afternoon",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -982,7 +1174,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_26",
+      "id": "evt_kcls_20261102_26",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -1003,8 +1195,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "morning",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -1029,7 +1221,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_kcls_20261103_27",
+      "id": "evt_kcls_20261102_27",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -1050,8 +1242,8 @@
           "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
         },
         "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
           "timeSlot": "afternoon",
           "displayTime": "周末 · 10:30–11:30"
         },
@@ -1070,99 +1262,6 @@
         "source": {
           "originalUrl": "https://kcls.bibliocommons.com/events/6a925c382dac6e003722877e",
           "sourceName": "金县公共图书馆 (KCLS)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_staple_kidsquest",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.1963,
-          47.6205
-        ]
-      },
-      "properties": {
-        "title": "STEAM Exploration & Water Play (儿童科技与水动力工坊)",
-        "summary": "Bellevue 核心亲子馆，室内双层攀爬架与流体实验平台，学龄前与小学生的雨天首选。",
-        "organizer": "KidsQuest Children's Museum",
-        "category": "exploration_exp",
-        "location": {
-          "venueName": "KidsQuest Children's Museum",
-          "address": "1116 108th Ave NE, Bellevue, WA 98004",
-          "city": "Bellevue",
-          "region": "eastside",
-          "googleMapsUrl": "https://maps.google.com/?q=KidsQuest+Children's+Museum"
-        },
-        "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
-          "timeSlot": "afternoon",
-          "displayTime": "周末 · 13:00–16:30"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool",
-            "elementary"
-          ],
-          "environment": "indoor",
-          "isFree": false,
-          "priceLabel": "门票 $15 / 会员免费",
-          "requiresRsvp": false,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "free_lot"
-        },
-        "source": {
-          "originalUrl": "https://www.kidsquestmuseum.org",
-          "sourceName": "KidsQuest 官网"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_staple_burke",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3116,
-          47.6605
-        ]
-      },
-      "properties": {
-        "title": "Fossil Prep & Dino Discovery (古生物化石研学工坊)",
-        "summary": "近距离隔着透明玻璃观察古生物修复师修整恐龙骨骼，设有小学生动手动脑探索专区。",
-        "organizer": "Burke Museum",
-        "category": "nature_animals",
-        "location": {
-          "venueName": "Burke Museum",
-          "address": "4300 15th Ave NE, Seattle, WA 98105",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=Burke+Museum"
-        },
-        "schedule": {
-          "startDate": "2026-11-03",
-          "endDate": "2026-11-03",
-          "timeSlot": "morning",
-          "displayTime": "周末 · 10:00–12:30"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "elementary"
-          ],
-          "environment": "indoor",
-          "isFree": false,
-          "priceLabel": "门票 $14–$22",
-          "requiresRsvp": false,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "paid_garage"
-        },
-        "source": {
-          "originalUrl": "https://www.burkemuseum.org",
-          "sourceName": "Burke Museum"
         }
       }
     }
