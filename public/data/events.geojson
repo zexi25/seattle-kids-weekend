@@ -1,0 +1,1170 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generatedAt": "2026-11-03T00:18:52.675887Z",
+    "region": "Greater Seattle Area",
+    "totalCount": 25
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261107_1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3328,
+          47.6067
+        ]
+      },
+      "properties": {
+        "title": "Family Storytime & Puppet Play (全年龄家庭绘本与木偶剧)",
+        "summary": "西雅图中央图书馆少儿馆经典周末活动，包含互动绘本共读、韵律儿歌与手指木偶游戏。",
+        "organizer": "Seattle Public Library",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Central Library",
+          "address": "1000 4th Ave, Seattle, WA 98104",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Central+Library+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-07",
+          "endDate": "2026-11-07",
+          "timeSlot": "morning",
+          "displayTime": "周六 · 10:30–11:15"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261107_2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3328,
+          47.6067
+        ]
+      },
+      "properties": {
+        "title": "Kids STEAM Saturday: LEGO Builders (乐高与机械拼搭工坊)",
+        "summary": "针对学龄前和小学低年级儿童设计的动手空间，提供丰富的积木与主题挑战任务卡。",
+        "organizer": "Seattle Public Library",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "Central Library",
+          "address": "1000 4th Ave, Seattle, WA 98104",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Central+Library+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-07",
+          "endDate": "2026-11-07",
+          "timeSlot": "afternoon",
+          "displayTime": "周六 · 14:00–15:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261107_3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3846,
+          47.6685
+        ]
+      },
+      "properties": {
+        "title": "Toddler Rhyme & Movement (学步儿音乐与韵律游戏)",
+        "summary": "专为0-3岁低幼设计的音乐互动活动，鼓励大肢体运动、节奏感培养及亲子共读习惯。",
+        "organizer": "Seattle Public Library",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Ballard Branch",
+          "address": "5614 22nd Ave NW, Seattle, WA 98107",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Ballard+Branch+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-07",
+          "endDate": "2026-11-07",
+          "timeSlot": "morning",
+          "displayTime": "周六 · 10:30–11:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261108_4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3218,
+          47.6231
+        ]
+      },
+      "properties": {
+        "title": "Weekend Craft Station: Nature Prints (自然植物拓印手工坊)",
+        "summary": "结合社区绿地植物标本制作自然手作书签，锻炼孩子手部精细动作与色彩审美。",
+        "organizer": "Seattle Public Library",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Capitol Hill Branch",
+          "address": "425 Harvard Ave E, Seattle, WA 98102",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Capitol+Hill+Branch+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-08",
+          "endDate": "2026-11-08",
+          "timeSlot": "afternoon",
+          "displayTime": "周日 · 13:30–15:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "street_parking"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261107_5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3116,
+          47.6657
+        ]
+      },
+      "properties": {
+        "title": "Bilingual Storytime (西雅图双语绘本共读会)",
+        "summary": "华大分馆特色双语读书会，通过绘本领读和童谣互动建立沉浸式早期语言环境。",
+        "organizer": "Seattle Public Library",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "University Branch",
+          "address": "5009 Roosevelt Way NE, Seattle, WA 98105",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=University+Branch+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-07",
+          "endDate": "2026-11-07",
+          "timeSlot": "morning",
+          "displayTime": "周六 · 11:00–11:45"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "street_parking"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261108_6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3831,
+          47.5612
+        ]
+      },
+      "properties": {
+        "title": "Baby Play & Learn (婴儿爬爬与感官探索)",
+        "summary": "为18个月以下婴儿及其照护者准备的感官地垫活动，提供安全的多材质教具与育儿交流环境。",
+        "organizer": "Seattle Public Library",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "West Seattle Branch",
+          "address": "2306 42nd Ave SW, Seattle, WA 98116",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=West+Seattle+Branch+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-08",
+          "endDate": "2026-11-08",
+          "timeSlot": "morning",
+          "displayTime": "周日 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "Toddler Story Time",
+        "summary": "Enjoy stories, music, movement and rhymes that are just right for busy toddlers! For 18 months to age 3 with adult. Registration not require...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "afternoon",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6a80c21d3b6c71003e5919e3",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "Baby Story Time",
+        "summary": "Share bouncy rhymes, familiar songs and a book for babies. Stay for a short play and social time for children and caregivers. Newborn to 24 ...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "morning",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6a76c24df213992f00ca7f2b",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "Kaleidoscope Play & Learn",
+        "summary": "Join our Kaleidoscope Play & Learn program! Sing songs, read books, create art, and enjoy playtime together while exploring stories and trad...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "morning",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/69bb6c065a2d780f42c410bb",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2081,
+          47.4816
+        ]
+      },
+      "properties": {
+        "title": "Toddler Story Time at Renton Library",
+        "summary": "Enjoy stories, music, movement and rhymes. Help develop your toddler's early literacy skills. Ages 1 to 3 with adult. Registration not requi...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Renton Library",
+          "address": "100 Mill Ave S, Renton, WA 98057",
+          "city": "Renton",
+          "region": "south",
+          "googleMapsUrl": "https://maps.google.com/?q=Renton+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "afternoon",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6a90b2edbe148200298a96d7",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "Sensory Story Time",
+        "summary": "Enjoy stories, music, movement and rhymes! This story time is designed for sensory seeking kids and children with any sensory integration ch...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "afternoon",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6aa898913dd190003e71fcaa",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "Family Story Time",
+        "summary": "Ages 0-5 with adult, siblings welcome. Enjoy stories, music, movement and rhymes! Help develop your child’s early literacy skills. Play time...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "afternoon",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6a7fa5cf3b6c71003e58f31d",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "Crafts for 3s, 4s and 5s",
+        "summary": "Enjoy a story and get creative with crafts designed for busy little hands. Sponsored by the Maple Valley Library Guild. Ages 3 to 5 with adu...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "afternoon",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6a820170d4b10d003006de2c",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_10",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "STEAM Family Story Time",
+        "summary": "Enjoy stories, music, movement and rhymes with a STEAM (Science, Technology, Engineering, Art, or Music) twist! Help develop your child's ea...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "morning",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6a7f9b172dac6e00371f2788",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_15",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2081,
+          47.4816
+        ]
+      },
+      "properties": {
+        "title": "Baby Story Time at Renton Library",
+        "summary": "Share nursery rhymes, songs and stories with your baby! Connect and have fun with other families. Newborn to 18 months with adult. Registrat...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Renton Library",
+          "address": "100 Mill Ave S, Renton, WA 98057",
+          "city": "Renton",
+          "region": "south",
+          "googleMapsUrl": "https://maps.google.com/?q=Renton+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "morning",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6a90b2e8be148200298a96c9",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_18",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2285,
+          47.5796
+        ]
+      },
+      "properties": {
+        "title": "Tech Support for Older Adults",
+        "summary": "Get expert volunteer tech help on a weekly basis from local high school teens. Mondays: 3:15pm-4:45pm. Sponsored by SeBoost, Mercer Island H...",
+        "organizer": "King County Library System",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "Mercer Island Library",
+          "address": "4400 88th Ave SE, Mercer Island, WA 98040",
+          "city": "Mercer Island",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Mercer+Island+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "afternoon",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6a98873e57c264087ad5cb16",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_19",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "The Teen Lounge",
+        "summary": "Come relax, play games, work on homework, or get creative with art activities in a space made just for middle and high school students. Enjo...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "morning",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6a85dcc8b20478002993ee43",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_20",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "Tutoring and Homework Help",
+        "summary": "Volunteer tutors provide homework help for grades K-12. They can also give language support for homework or translation in many languages. S...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "morning",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6a503b3d489285b703d8525a",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_21",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "Kandi Bracelets",
+        "summary": "Come try your hand at crafting these simple and colorful bracelets with presenter Emily Donnel. Kandi bracelets are great gifts and are easi...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "afternoon",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6abffb22035faf0033d9e253",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_22",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "Reading Buddies",
+        "summary": "Volunteers help students practice reading out loud. Two students are paired by reading level with each volunteer. Book selection focuses on ...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "morning",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6a503bc164ed854800a4edde",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_25",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2285,
+          47.5796
+        ]
+      },
+      "properties": {
+        "title": "Family Story Time",
+        "summary": "Enjoy stories, music, movement and rhymes that develop your child’s early literacy skills. A play time will follow. Recommended for kids age...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Mercer Island Library",
+          "address": "4400 88th Ave SE, Mercer Island, WA 98040",
+          "city": "Mercer Island",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Mercer+Island+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "afternoon",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6abacfc8e06996003a7fda91",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "Seasonal Crochet",
+        "summary": "Join our five-part crochet series at the library and learn to craft your own interchangeable seasonal garland! Over five sessions, you will ...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "morning",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6acd150c29c3d600332f68e1",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_kcls_20261102_27",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1931,
+          47.6186
+        ]
+      },
+      "properties": {
+        "title": "Beyond Story Time",
+        "summary": "Come hear a story, then engage in activities that help expand early literacy, kindergarten readiness and fine motor skills. Have fun with cr...",
+        "organizer": "King County Library System",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Library",
+          "address": "1111 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Library+Library"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "afternoon",
+          "displayTime": "周末 · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://kcls.bibliocommons.com/events/6a925c382dac6e003722877e",
+          "sourceName": "金县公共图书馆 (KCLS)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_staple_kidsquest",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1963,
+          47.6205
+        ]
+      },
+      "properties": {
+        "title": "STEAM Exploration & Water Play (儿童科技与水动力工坊)",
+        "summary": "Bellevue 核心亲子馆，室内双层攀爬架与流体实验平台，学龄前与小学生的雨天首选。",
+        "organizer": "KidsQuest Children's Museum",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "KidsQuest Children's Museum",
+          "address": "1116 108th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=KidsQuest+Children's+Museum"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "afternoon",
+          "displayTime": "周末 · 13:00–16:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "门票 $15 / 会员免费",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://www.kidsquestmuseum.org",
+          "sourceName": "KidsQuest 官网"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_staple_burke",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3116,
+          47.6605
+        ]
+      },
+      "properties": {
+        "title": "Fossil Prep & Dino Discovery (古生物化石研学工坊)",
+        "summary": "近距离隔着透明玻璃观察古生物修复师修整恐龙骨骼，设有小学生动手动脑探索专区。",
+        "organizer": "Burke Museum",
+        "category": "nature_animals",
+        "location": {
+          "venueName": "Burke Museum",
+          "address": "4300 15th Ave NE, Seattle, WA 98105",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Burke+Museum"
+        },
+        "schedule": {
+          "startDate": "2026-11-02",
+          "endDate": "2026-11-02",
+          "timeSlot": "morning",
+          "displayTime": "周末 · 10:00–12:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "门票 $14–$22",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.burkemuseum.org",
+          "sourceName": "Burke Museum"
+        }
+      }
+    }
+  ]
+}
