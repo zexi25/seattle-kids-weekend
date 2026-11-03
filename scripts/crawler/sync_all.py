@@ -54,7 +54,7 @@ def sync_all():
         "metadata": {
             "generatedAt": datetime.utcnow().isoformat() + "Z",
             "totalCount": len(unique_features),
-            "sources": ["KCLS", "SPL", "Woodland Park Zoo", "Seattle Aquarium"]
+            "sources": ["KCLS", "SPL", "Woodland Park Zoo", "Seattle Aquarium", "Pacific Science Center", "MoPOP"]
         },
         "features": unique_features
     }

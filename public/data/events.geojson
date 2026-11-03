@@ -1,13 +1,15 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generatedAt": "2026-11-03T00:50:25.938163Z",
-    "totalCount": 27,
+    "generatedAt": "2026-11-03T00:54:04.738563Z",
+    "totalCount": 31,
     "sources": [
       "KCLS",
       "SPL",
       "Woodland Park Zoo",
-      "Seattle Aquarium"
+      "Seattle Aquarium",
+      "Pacific Science Center",
+      "MoPOP"
     ]
   },
   "features": [
@@ -291,7 +293,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_venue_woodland_park_zoo_20261107_1",
+      "id": "evt_woodland_park_zoo_20261107_1",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -338,7 +340,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_venue_woodland_park_zoo_20261108_2",
+      "id": "evt_woodland_park_zoo_20261108_2",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -384,7 +386,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_venue_seattle_aquarium_20261107_3",
+      "id": "evt_seattle_aquarium_20261107_3",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -431,7 +433,7 @@
     },
     {
       "type": "Feature",
-      "id": "evt_venue_seattle_aquarium_20261108_4",
+      "id": "evt_seattle_aquarium_20261108_4",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -473,6 +475,191 @@
         "source": {
           "originalUrl": "https://www.seattleaquarium.org",
           "sourceName": "Seattle Aquarium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_pacific_science_center_20261107_5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3518,
+          47.6198
+        ]
+      },
+      "properties": {
+        "title": "Tropical Butterfly House Experience (热带蝴蝶温室沉浸漫步)",
+        "summary": "恒温80°F的热带雨林生态温室，数百只自由飞翔的鲜艳蝴蝶，观察从蝶蛹到破茧展翅的全生命周期。",
+        "organizer": "Pacific Science Center",
+        "category": "nature_animals",
+        "location": {
+          "venueName": "Pacific Science Center (太平洋科学中心)",
+          "address": "200 2nd Ave N, Seattle, WA 98109",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Pacific+Science+Center+(太平洋科学中心)"
+        },
+        "schedule": {
+          "startDate": "2026-11-07",
+          "endDate": "2026-11-07",
+          "timeSlot": "morning",
+          "displayTime": "全天开放 · 10:00–17:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "需购门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://pacificsciencecenter.org",
+          "sourceName": "Pacific Science Center"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_pacific_science_center_20261108_6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3518,
+          47.6198
+        ]
+      },
+      "properties": {
+        "title": "Tinker Tank Makerspace Workshop (创客空间：重力重构与动手工程)",
+        "summary": "开放式物理动手创造空间，包含风洞测试台、重力滚球轨道设计和乐高工程结构搭设，适合学龄儿童锻炼批判性工程思维。",
+        "organizer": "Pacific Science Center",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "Pacific Science Center (太平洋科学中心)",
+          "address": "200 2nd Ave N, Seattle, WA 98109",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Pacific+Science+Center+(太平洋科学中心)"
+        },
+        "schedule": {
+          "startDate": "2026-11-08",
+          "endDate": "2026-11-08",
+          "timeSlot": "afternoon",
+          "displayTime": "周末 · 11:00–16:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "需购门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://pacificsciencecenter.org",
+          "sourceName": "Pacific Science Center"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_mopop_20261107_7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3483,
+          47.6215
+        ]
+      },
+      "properties": {
+        "title": "Sound Lab: Hands-on Music & Instruments (声音实验室：乐器动手演奏实战)",
+        "summary": "MoPOP最具人气的少儿互动展区，隔音录音室内配备真实架子鼓、电吉他、合成器及调音台，零门槛亲子即兴合奏体验。",
+        "organizer": "MoPOP",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "MoPOP (西雅图流行文化博物馆)",
+          "address": "325 5th Ave N, Seattle, WA 98109",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=MoPOP+(西雅图流行文化博物馆)"
+        },
+        "schedule": {
+          "startDate": "2026-11-07",
+          "endDate": "2026-11-07",
+          "timeSlot": "afternoon",
+          "displayTime": "全天开放 · 10:00–17:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "需购门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.mopop.org",
+          "sourceName": "MoPOP"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_mopop_20261108_8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3483,
+          47.6215
+        ]
+      },
+      "properties": {
+        "title": "Indie Game Lounge & Sci-Fi Worlds (独立游戏展与科幻奇幻宇宙)",
+        "summary": "亲子共同体验数十款艺术与冒险独立游戏，穿越科幻与奇幻道具展厅，探索经典游戏与影视幕后创意设计。",
+        "organizer": "MoPOP",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "MoPOP (西雅图流行文化博物馆)",
+          "address": "325 5th Ave N, Seattle, WA 98109",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=MoPOP+(西雅图流行文化博物馆)"
+        },
+        "schedule": {
+          "startDate": "2026-11-08",
+          "endDate": "2026-11-08",
+          "timeSlot": "morning",
+          "displayTime": "全天开放 · 10:00–17:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "需购门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.mopop.org",
+          "sourceName": "MoPOP"
         }
       }
     },
