@@ -1,70 +1,94 @@
 import json
 import os
 import sys
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime
 
-# 导入各数据源提取模块
-sys.path.append(os.path.dirname(__file__))
-from fetch_kcls import fetch_kcls_events
+# 导入各数据源采集模块
 from fetch_spl import fetch_spl_events
 from fetch_venues import fetch_venue_events
+from fetch_kcls import fetch_kcls_events
 
-OUTPUT_FILE = os.path.abspath(
+OUTPUT_PATH = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "../../public/data/events.geojson")
 )
+
+def deduplicate_events(features):
+    """
+    按 (venueName, title, startDate) 联合去重
+    保证同一个场馆不同周末的排期都能完整保留
+    """
+    seen_keys = set()
+    cleaned = []
+
+    for feat in features:
+        p = feat.get("properties", {})
+        venue = p.get("location", {}).get("venueName", "").strip().lower()
+        title = p.get("title", "").strip().lower()
+        date = p.get("schedule", {}).get("startDate", "").strip()
+
+        # 联合键：地点 + 标题 + 具体排期日期
+        dedup_key = f"{venue}|{title}|{date}"
+
+        if dedup_key not in seen_keys:
+            seen_keys.add(dedup_key)
+            cleaned.append(feat)
+
+    return cleaned
 
 def sync_all():
     print("=== 开始执行大西雅图亲子活动多源同步 ===\n")
     all_features = []
 
-    tasks = {
-        "金县公共图书馆 (KCLS)": fetch_kcls_events,
-        "西雅图公共图书馆 (SPL)": fetch_spl_events,
-        "自然科教场馆 (Zoo & Aquarium)": fetch_venue_events
-    }
+    # 1. 西雅图公共图书馆 (SPL)
+    try:
+        spl_events = fetch_spl_events()
+        all_features.extend(spl_events)
+        print(f"✅ [西雅图公共图书馆 (SPL)] 成功采集 {len(spl_events)} 条。\n")
+    except Exception as e:
+        print(f"❌ [SPL] 抓取失败: {e}\n")
 
-    with ThreadPoolExecutor(max_workers=3) as executor:
-        future_to_source = {executor.submit(func): name for name, func in tasks.items()}
-        for future in as_completed(future_to_source):
-            source_name = future_to_source[future]
-            try:
-                data = future.result()
-                print(f"✅ [{source_name}] 执行完毕，成功获取 {len(data)} 条。")
-                all_features.extend(data)
-            except Exception as e:
-                print(f"❌ [{source_name}] 执行失败: {e}")
+    # 2. 地标场馆与市集 (KidsQuest, 飞行博物馆, 植物园, 动物园, 水族馆, 农夫市集等)
+    try:
+        venue_events = fetch_venue_events()
+        all_features.extend(venue_events)
+        print(f"✅ [地标场馆与特色市集] 成功采集 {len(venue_events)} 条。\n")
+    except Exception as e:
+        print(f"❌ [Venues] 抓取失败: {e}\n")
 
-    # 去重与清洗（根据标题与地点的指纹组合去重）
-    unique_features = []
-    seen_fingerprints = set()
+    # 3. 金县图书馆 (KCLS)
+    try:
+        kcls_events = fetch_kcls_events()
+        all_features.extend(kcls_events)
+        print(f"✅ [金县公共图书馆 (KCLS)] 成功采集 {len(kcls_events)} 条。\n")
+    except Exception as e:
+        print(f"❌ [KCLS] 抓取失败: {e}\n")
 
-    for feat in all_features:
-        props = feat.get("properties", {})
-        title = props.get("title", "").strip().lower()
-        venue = props.get("location", {}).get("venueName", "").strip().lower()
-        fingerprint = f"{title}_{venue}"
-        
-        if fingerprint not in seen_fingerprints and title:
-            seen_fingerprints.add(fingerprint)
-            unique_features.append(feat)
+    # 严格去重与输出
+    total_raw = len(all_features)
+    final_features = deduplicate_events(all_features)
 
-    geojson_output = {
+    # 按照开始日期升序排序
+    final_features.sort(
+        key=lambda x: (
+            x.get("properties", {}).get("schedule", {}).get("startDate", "9999-99-99"),
+            x.get("properties", {}).get("location", {}).get("city", "")
+        )
+    )
+
+    geojson_data = {
         "type": "FeatureCollection",
         "metadata": {
-            "generatedAt": datetime.utcnow().isoformat() + "Z",
-            "totalCount": len(unique_features),
-            "sources": ["KCLS", "SPL", "Woodland Park Zoo", "Seattle Aquarium", "Pacific Science Center", "MoPOP"]
+            "generatedAt": json.dumps(os.environ.get("GITHUB_RUN_ID", "local")),
+            "totalCount": len(final_features)
         },
-        "features": unique_features
+        "features": final_features
     }
 
-    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(geojson_output, f, ensure_ascii=False, indent=2)
+    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(geojson_data, f, ensure_ascii=False, indent=2)
 
-    print(f"\n数据清洗：原始 {len(all_features)} 条，去重后保留 {len(unique_features)} 条。")
-    print(f"🎉 成功同步并导出至: {OUTPUT_FILE}")
+    print(f"数据清洗：原始 {total_raw} 条，保留未来 30 天各周末排期共 {len(final_features)} 条。")
+    print(f"🎉 成功同步并导出至: {OUTPUT_PATH}")
 
 if __name__ == "__main__":
     sync_all()

@@ -50,7 +50,7 @@ export default function DataSourceFooter() {
         {/* 标题说明 */}
         <div className="flex items-center justify-between">
           <span className="font-semibold text-slate-700">活动来源</span>
-          <span className="text-[11px] text-slate-400">持续更新 · 权威机构</span>
+          <span className="text-[11px] text-slate-400">持续更新</span>
         </div>
 
         {/* 外链矩阵流 */}

@@ -1,183 +1,188 @@
-import html
 import re
-import xml.etree.ElementTree as ET
-from datetime import datetime
 import requests
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 
-KCLS_BRANCH_GEO = {
-    "Bellevue": {
-        "coords": [-122.1931, 47.6186],
-        "address": "1111 110th Ave NE, Bellevue, WA 98004",
-        "city": "Bellevue",
-        "region": "eastside"
-    },
-    "Redmond": {
-        "coords": [-122.1264, 47.6784],
-        "address": "15990 NE 85th St, Redmond, WA 98052",
-        "city": "Redmond",
-        "region": "eastside"
-    },
-    "Kirkland": {
-        "coords": [-122.2045, 47.6765],
-        "address": "308 Kirkland Ave, Kirkland, WA 98033",
-        "city": "Kirkland",
-        "region": "eastside"
-    },
-    "Issaquah": {
-        "coords": [-122.0366, 47.5301],
-        "address": "10 W Sunset Way, Issaquah, WA 98027",
-        "city": "Issaquah",
-        "region": "eastside"
-    },
-    "Renton": {
-        "coords": [-122.2081, 47.4816],
-        "address": "100 Mill Ave S, Renton, WA 98057",
-        "city": "Renton",
-        "region": "south"
-    },
-    "Sammamish": {
-        "coords": [-122.0315, 47.6174],
-        "address": "825 228th Ave SE, Sammamish, WA 98075",
-        "city": "Sammamish",
-        "region": "eastside"
-    },
-    "Mercer Island": {
-        "coords": [-122.2285, 47.5796],
-        "address": "4400 88th Ave SE, Mercer Island, WA 98040",
-        "city": "Mercer Island",
-        "region": "eastside"
-    }
+KCLS_API_URL = "https://gateway.bibliocommons.com/v2/libraries/kcls/events"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "application/json"
 }
 
-DEFAULT_KCLS_GEO = KCLS_BRANCH_GEO["Bellevue"]
+CATEGORY_RULES = {
+    "nature_animals": ["nature", "animal", "wildlife", "garden", "outdoor", "zoo", "bird", "park"],
+    "music_crafts": ["music", "concert", "sing", "craft", "art", "maker", "paint", "origami", "clay", "rhyme"],
+    "festivals_markets": ["festival", "celebrate", "fair", "market", "holiday", "storytelling", "puppet"],
+    "exploration_exp": ["lego", "stem", "steam", "robot", "science", "code", "coding", "chess", "game", "tinker"]
+}
 
-def _infer_attributes(title: str, desc: str):
-    text = f"{title} {desc}".lower()
-    
-    age_buckets = []
-    if any(k in text for k in ['baby', 'toddler', 'preschool', 'storytime', 'infant', '0-5', 'early learning', 'play & learn']):
-        age_buckets.append('preschool')
-    if any(k in text for k in ['kids', 'elementary', 'school-age', 'steam', 'lego', 'math', '6-12', 'robot', 'fossil', 'science']):
-        age_buckets.append('elementary')
-    if not age_buckets:
-        age_buckets = ['preschool', 'elementary']
+BRANCH_COORDS = {
+    "bellevue": [-122.1932, 47.6185],
+    "redmond": [-122.1215, 47.6740],
+    "kirkland": [-122.2030, 47.6765],
+    "mercer island": [-122.2285, 47.5750],
+    "renton": [-122.2035, 47.4795],
+    "issaquah": [-122.0405, 47.5301],
+    "sammamish": [-122.0305, 47.6165],
+    "bothell": [-122.2065, 47.7600],
+    "kenmore": [-122.2450, 47.7570],
+    "shoreline": [-122.3450, 47.7560],
+    "federal way": [-122.3125, 47.3150],
+    "woodinville": [-122.1550, 47.7540],
+    "auburn": [-122.2285, 47.3075],
+    "newcastle": [-122.1700, 47.5390],
+    "kingsgate": [-122.1950, 47.7050],
+    "lake hills": [-122.1450, 47.6080],
+    "newport way": [-122.1750, 47.5750],
+    "maple valley": [-122.0450, 47.3850],
+    "kent": [-122.2300, 47.3800]
+}
 
-    if any(k in text for k in ['story', 'craft', 'music', 'sing', 'book', 'rhyme', 'art', 'reading']):
-        category = 'music_crafts'
-    elif any(k in text for k in ['nature', 'animal', 'farm', 'garden', 'dino', 'fossil', 'outdoor', 'zoo']):
-        category = 'nature_animals'
-    elif any(k in text for k in ['festival', 'market', 'fair', 'celebration', 'parade']):
-        category = 'festivals_markets'
-    else:
-        category = 'exploration_exp'
+def infer_category(title, summary):
+    text = f"{title} {summary}".lower()
+    for cat, kws in CATEGORY_RULES.items():
+        if any(kw in text for kw in kws):
+            return cat
+    return "exploration_exp"
 
-    environment = 'outdoor' if any(k in text for k in ['outdoor', 'park', 'garden', 'trail', 'farm']) else 'indoor'
-    return age_buckets, category, environment
-
-def _is_kids_relevant(title: str, desc: str):
-    """过滤出适合儿童和家庭的活动"""
-    text = f"{title} {desc}".lower()
-    kids_keywords = [
-        'storytime', 'children', 'kids', 'baby', 'toddler', 'preschool',
-        'family', 'steam', 'lego', 'play & learn', 'craft', 'puppet', 'teen'
-    ]
-    # 排除纯成人主题
-    exclude_keywords = ['tax help', 'medicare', 'esl', 'job search', 'citizenship class', 'adult book club']
-    if any(e in text for e in exclude_keywords):
-        return False
-    return any(k in text for k in kids_keywords)
+def infer_region(city_or_branch):
+    text = city_or_branch.lower()
+    if any(k in text for k in ["bellevue", "redmond", "kirkland", "mercer", "issaquah", "sammamish", "newcastle", "newport"]):
+        return "eastside"
+    if any(k in text for k in ["bothell", "kenmore", "shoreline", "woodinville", "kingsgate"]):
+        return "north"
+    if any(k in text for k in ["renton", "kent", "auburn", "federal way", "maple valley"]):
+        return "south"
+    return "eastside"
 
 def fetch_kcls_events():
-    url = "https://kcls.bibliocommons.com/events/rss/all"
-    headers = {"User-Agent": "Mozilla/5.0"}
+    print("[KCLS] 正在连接金县官方 Gateway API...")
+    
+    # 明确西雅图本地时区 (Pacific Time)
+    seattle_tz = ZoneInfo("America/Los_Angeles")
+    now = datetime.now(seattle_tz)
+    start_str = now.strftime("%Y-%m-%d")
+    end_str = (now + timedelta(days=30)).strftime("%Y-%m-%d")
+
+    # 查询未来 30 天，已在 API 层面直接限定为 Kids & Families 分类
+    params = {
+        "startDate": start_str,
+        "endDate": end_str,
+        "audiences": "605a5a1f6a01492400511874,605a5a226a01492400511875",
+        "limit": 100
+    }
+
+    try:
+        res = requests.get(KCLS_API_URL, headers=HEADERS, params=params, timeout=15)
+        res.raise_for_status()
+        data = res.json()
+    except Exception as e:
+        print(f"[KCLS] ⚠️ 请求官方 API 异常: {e}")
+        return []
+
+    entities = data.get("entities", {})
+    events_map = entities.get("events", {})
+    locations_map = entities.get("locations", {})
+
+    print(f"[KCLS] 成功获取 {len(events_map)} 条儿童/家庭活动，按西雅图本地时区严格提取周末场次...")
+
     features = []
 
-    print("[KCLS] 正在拉取金县官方 RSS 订阅源...")
-    try:
-        res = requests.get(url, headers=headers, timeout=15)
-        res.raise_for_status()
-        
-        # 解析 XML
-        root = ET.fromstring(res.content)
-        items = root.findall('./channel/item')
-        print(f"[KCLS] RSS 共包含 {len(items)} 条全系统活动，开始筛选儿童家庭活动...")
+    for event_id, item in events_map.items():
+        title = item.get("title", "")
+        desc = item.get("description", "") or item.get("briefDescription", "")
+        full_text = f"{title} {desc}".lower()
 
-        for idx, item in enumerate(items):
-            title = item.findtext('title', default='').strip()
-            link = item.findtext('link', default='')
-            raw_desc = item.findtext('description', default='')
-            pub_date = item.findtext('pubDate', default='')
+        # 1. 严格使用 ISO 解析并转换为西雅图当地时间
+        start_iso = item.get("start")
+        if not start_iso:
+            continue
 
-            # 清理 HTML 实体与标签
-            clean_desc = re.sub(r'<[^>]+>', ' ', html.unescape(raw_desc))
-            clean_desc = re.sub(r'\s+', ' ', clean_desc).strip()
+        try:
+            # 标准化 UTC 字符串并转为西雅图时区
+            if start_iso.endswith("Z"):
+                start_iso = start_iso.replace("Z", "+00:00")
+            utc_dt = datetime.fromisoformat(start_iso)
+            event_dt = utc_dt.astimezone(seattle_tz)
+        except Exception:
+            continue
 
-            if not _is_kids_relevant(title, clean_desc):
-                continue
+        # 2. 严格按西雅图本地时间判断是否为周末 (周六=5, 周日=6)
+        if event_dt.weekday() not in (5, 6):
+            continue
 
-            # 匹配分馆地点与地理坐标
-            branch_name = "Bellevue Library"
-            geo = DEFAULT_KCLS_GEO
-            for name, data in KCLS_BRANCH_GEO.items():
-                if name.lower() in f"{title} {clean_desc}".lower():
-                    branch_name = f"{name} Library"
-                    geo = data
-                    break
+        day_name = "周六" if event_dt.weekday() == 5 else "周日"
+        date_str = event_dt.strftime("%Y-%m-%d")
+        display_time = f"{event_dt.strftime('%m月%d日')} ({day_name}) · {event_dt.strftime('%H:%M')}"
+        time_slot = "morning" if event_dt.hour < 12 else "afternoon"
 
-            age_buckets, category, environment = _infer_attributes(title, clean_desc)
+        # 3. 提取分馆
+        loc_id = item.get("locationId")
+        loc_data = locations_map.get(loc_id, {})
+        venue_name = loc_data.get("name") or "KCLS Library"
+        clean_branch = venue_name.replace("Library", "").strip()
 
-            features.append({
-                "type": "Feature",
-                "id": f"evt_kcls_{datetime.now().strftime('%Y%m%d')}_{len(features) + 1}",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": geo["coords"]
-                },
-                "properties": {
-                    "title": title,
-                    "summary": clean_desc[:140] + ("..." if len(clean_desc) > 140 else ""),
-                    "organizer": "King County Library System",
-                    "category": category,
-                    "location": {
-                        "venueName": branch_name,
-                        "address": geo["address"],
-                        "city": geo["city"],
-                        "region": geo["region"],
-                        "googleMapsUrl": f"https://maps.google.com/?q={branch_name.replace(' ', '+')}+Library"
-                    },
-                    "schedule": {
-                        "startDate": datetime.now().strftime("%Y-%m-%d"),
-                        "endDate": datetime.now().strftime("%Y-%m-%d"),
-                        "timeSlot": "morning" if any(k in clean_desc.lower() for k in ['10:', '11:', 'am']) else "afternoon",
-                        "displayTime": pub_date[:16] if pub_date else "周末 · 10:30–11:30"
-                    },
-                    "familyAttributes": {
-                        "ageBuckets": age_buckets,
-                        "environment": environment,
-                        "isFree": True,
-                        "priceLabel": "免费入场",
-                        "requiresRsvp": False,
-                        "strollerFriendly": True,
-                        "hasChangingTable": True,
-                        "parking": "free_lot"
-                    },
-                    "source": {
-                        "originalUrl": link,
-                        "sourceName": "金县公共图书馆 (KCLS)"
-                    }
-                }
-            })
-
-            # 控制单次写入精选数量（前 30 条高质量亲子活动）
-            if len(features) >= 30:
+        # 匹配经纬度与区域
+        coords = [-122.1932, 47.6185]
+        for key, c in BRANCH_COORDS.items():
+            if key in clean_branch.lower():
+                coords = c
                 break
 
-    except Exception as e:
-        print(f"[KCLS] 解析异常: {e}")
+        region = infer_region(clean_branch)
+        category = infer_category(title, desc)
 
-    print(f"[KCLS] 筛选完成，提取到 {len(features)} 条儿童亲子活动！")
+        clean_summary = re.sub(r"<[^>]+>", "", desc).strip()
+        if len(clean_summary) > 160:
+            clean_summary = clean_summary[:160] + "..."
+
+        event_link = f"https://kcls.bibliocommons.com/events/{event_id}"
+
+        features.append({
+            "type": "Feature",
+            "id": f"evt_kcls_{event_id}",
+            "geometry": {
+                "type": "Point",
+                "coordinates": coords
+            },
+            "properties": {
+                "title": title,
+                "summary": clean_summary or "金县公共图书馆周末精选亲子活动。",
+                "organizer": f"KCLS ({clean_branch})",
+                "category": category,
+                "location": {
+                    "venueName": venue_name,
+                    "address": loc_data.get("address", f"{clean_branch}, WA"),
+                    "city": clean_branch,
+                    "region": region,
+                    "googleMapsUrl": f"https://maps.google.com/?q={venue_name.replace(' ', '+')}"
+                },
+                "schedule": {
+                    "startDate": date_str,
+                    "endDate": date_str,
+                    "timeSlot": time_slot,
+                    "displayTime": display_time
+                },
+                "familyAttributes": {
+                    "ageBuckets": ["preschool"] if any(b in full_text for b in ["toddler", "baby", "play & learn", "infant"]) else ["preschool", "elementary"],
+                    "environment": "indoor",
+                    "isFree": True,
+                    "priceLabel": "免费入场",
+                    "requiresRsvp": bool(item.get("isRegistrationRequired", False)),
+                    "strollerFriendly": True,
+                    "hasChangingTable": True,
+                    "parking": "free_lot"
+                },
+                "source": {
+                    "originalUrl": event_link,
+                    "sourceName": "金县图书馆 (KCLS)"
+                }
+            }
+        })
+
+    print(f"[KCLS] 筛选完成：成功提取出 {len(features)} 条符合条件的周末儿童活动！")
     return features
 
 if __name__ == "__main__":
-    results = fetch_kcls_events()
-    print(f"单独测试 KCLS: 成功输出 {len(results)} 条")
+    res = fetch_kcls_events()

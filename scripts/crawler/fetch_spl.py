@@ -45,8 +45,8 @@ SPL_RECURRING_PROGRAMS = [
         "branch": "Central Library",
         "title": "Family Storytime & Puppet Play (全年龄家庭绘本与木偶剧)",
         "summary": "西雅图中央图书馆少儿馆经典周末活动，包含互动绘本共读、韵律儿歌与手指木偶游戏。",
-        "day_offset": 5, # 周六
-        "display_time": "周六 · 10:30–11:15",
+        "weekday": 5,  # 周六
+        "time_range": "10:30–11:15",
         "time_slot": "morning",
         "category": "music_crafts",
         "age_buckets": ["preschool", "elementary"],
@@ -56,8 +56,8 @@ SPL_RECURRING_PROGRAMS = [
         "branch": "Central Library",
         "title": "Kids STEAM Saturday: LEGO Builders (乐高与机械拼搭工坊)",
         "summary": "针对学龄前和小学低年级儿童设计的动手空间，提供丰富的积木与主题挑战任务卡。",
-        "day_offset": 5, # 周六
-        "display_time": "周六 · 14:00–15:30",
+        "weekday": 5,  # 周六
+        "time_range": "14:00–15:30",
         "time_slot": "afternoon",
         "category": "exploration_exp",
         "age_buckets": ["elementary"],
@@ -67,8 +67,8 @@ SPL_RECURRING_PROGRAMS = [
         "branch": "Ballard Branch",
         "title": "Toddler Rhyme & Movement (学步儿音乐与韵律游戏)",
         "summary": "专为0-3岁低幼设计的音乐互动活动，鼓励大肢体运动、节奏感培养及亲子共读习惯。",
-        "day_offset": 5, # 周六
-        "display_time": "周六 · 10:30–11:00",
+        "weekday": 5,  # 周六
+        "time_range": "10:30–11:00",
         "time_slot": "morning",
         "category": "music_crafts",
         "age_buckets": ["preschool"],
@@ -78,30 +78,30 @@ SPL_RECURRING_PROGRAMS = [
         "branch": "Capitol Hill Branch",
         "title": "Weekend Craft Station: Nature Prints (自然植物拓印手工坊)",
         "summary": "结合社区绿地植物标本制作自然手作书签，锻炼孩子手部精细动作与色彩审美。",
-        "day_offset": 6, # 周日
-        "display_time": "周日 · 13:30–15:00",
+        "weekday": 6,  # 周日
+        "time_range": "13:30–15:00",
         "time_slot": "afternoon",
         "category": "music_crafts",
         "age_buckets": ["preschool", "elementary"],
-        "parking": "street_parking"
+        "parking": "street"
     },
     {
         "branch": "University Branch",
         "title": "Bilingual Storytime (西雅图双语绘本共读会)",
         "summary": "华大分馆特色双语读书会，通过绘本领读和童谣互动建立沉浸式早期语言环境。",
-        "day_offset": 5, # 周六
-        "display_time": "周六 · 11:00–11:45",
+        "weekday": 5,  # 周六
+        "time_range": "11:00–11:45",
         "time_slot": "morning",
         "category": "music_crafts",
         "age_buckets": ["preschool"],
-        "parking": "street_parking"
+        "parking": "street"
     },
     {
         "branch": "West Seattle Branch",
         "title": "Baby Play & Learn (婴儿爬爬与感官探索)",
         "summary": "为18个月以下婴儿及其照护者准备的感官地垫活动，提供安全的多材质教具与育儿交流环境。",
-        "day_offset": 6, # 周日
-        "display_time": "周日 · 10:30–11:30",
+        "weekday": 6,  # 周日
+        "time_range": "10:30–11:30",
         "time_slot": "morning",
         "category": "exploration_exp",
         "age_buckets": ["preschool"],
@@ -109,69 +109,87 @@ SPL_RECURRING_PROGRAMS = [
     }
 ]
 
-def _get_upcoming_weekend_dates():
+def _get_upcoming_weekends(days=30):
+    """获取今天起未来 30 天内的所有周六与周日对象及对应信息"""
     today = datetime.now()
-    days_until_saturday = (5 - today.weekday()) % 7
-    saturday = today + timedelta(days=days_until_saturday)
-    sunday = saturday + timedelta(days=1)
-    return {
-        5: saturday.strftime("%Y-%m-%d"),
-        6: sunday.strftime("%Y-%m-%d")
-    }
+    end_date = today + timedelta(days=days)
+    
+    # 找到本周六
+    days_until_sat = (5 - today.weekday()) % 7
+    current_sat = today + timedelta(days=days_until_sat)
+    
+    weekends = []
+    while current_sat <= end_date:
+        weekends.append((current_sat, 5, "周六"))
+        current_sun = current_sat + timedelta(days=1)
+        if current_sun <= end_date:
+            weekends.append((current_sun, 6, "周日"))
+        current_sat += timedelta(weeks=1)
+        
+    return weekends
 
 def fetch_spl_events():
-    weekend_dates = _get_upcoming_weekend_dates()
+    weekends = _get_upcoming_weekends(days=30)
     features = []
 
-    print("[SPL] 正在同步西雅图公共图书馆分馆周末亲子日程...")
-    for idx, item in enumerate(SPL_RECURRING_PROGRAMS):
-        branch = item["branch"]
-        geo = SPL_BRANCH_GEO.get(branch, SPL_BRANCH_GEO["Central Library"])
-        event_date = weekend_dates.get(item["day_offset"], weekend_dates[5])
+    print("[SPL] 正在同步西雅图公共图书馆未来 30 天周末常规亲子排期...")
+    
+    for date_obj, weekday, day_name in weekends:
+        date_str = date_obj.strftime("%Y-%m-%d")
+        display_prefix = f"{date_obj.strftime('%m月%d日')} ({day_name})"
 
-        features.append({
-            "type": "Feature",
-            "id": f"evt_spl_{event_date.replace('-', '')}_{idx + 1}",
-            "geometry": {
-                "type": "Point",
-                "coordinates": geo["coords"]
-            },
-            "properties": {
-                "title": item["title"],
-                "summary": item["summary"],
-                "organizer": "Seattle Public Library",
-                "category": item["category"],
-                "location": {
-                    "venueName": branch,
-                    "address": geo["address"],
-                    "city": geo["city"],
-                    "region": geo["region"],
-                    "googleMapsUrl": f"https://maps.google.com/?q={branch.replace(' ', '+')}+Seattle+Public+Library"
+        for idx, item in enumerate(SPL_RECURRING_PROGRAMS):
+            # 仅在项目指定的周六或周日生成该场次
+            if item["weekday"] != weekday:
+                continue
+
+            branch = item["branch"]
+            geo = SPL_BRANCH_GEO.get(branch, SPL_BRANCH_GEO["Central Library"])
+            formatted_display_time = f"{display_prefix} · {item['time_range']}"
+
+            features.append({
+                "type": "Feature",
+                "id": f"evt_spl_{date_str.replace('-', '')}_{idx + 1}",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": geo["coords"]
                 },
-                "schedule": {
-                    "startDate": event_date,
-                    "endDate": event_date,
-                    "timeSlot": item["time_slot"],
-                    "displayTime": item["display_time"]
-                },
-                "familyAttributes": {
-                    "ageBuckets": item["age_buckets"],
-                    "environment": "indoor",
-                    "isFree": True,
-                    "priceLabel": "免费入场",
-                    "requiresRsvp": False,
-                    "strollerFriendly": True,
-                    "hasChangingTable": True,
-                    "parking": item["parking"]
-                },
-                "source": {
-                    "originalUrl": "https://www.spl.org",
-                    "sourceName": "西雅图公共图书馆 (SPL)"
+                "properties": {
+                    "title": item["title"],
+                    "summary": item["summary"],
+                    "organizer": "Seattle Public Library",
+                    "category": item["category"],
+                    "location": {
+                        "venueName": f"SPL - {branch}",
+                        "address": geo["address"],
+                        "city": geo["city"],
+                        "region": geo["region"],
+                        "googleMapsUrl": f"https://maps.google.com/?q={branch.replace(' ', '+')}+Seattle+Public+Library"
+                    },
+                    "schedule": {
+                        "startDate": date_str,
+                        "endDate": date_str,
+                        "timeSlot": item["time_slot"],
+                        "displayTime": formatted_display_time
+                    },
+                    "familyAttributes": {
+                        "ageBuckets": item["age_buckets"],
+                        "environment": "indoor",
+                        "isFree": True,
+                        "priceLabel": "免费入场",
+                        "requiresRsvp": False,
+                        "strollerFriendly": True,
+                        "hasChangingTable": True,
+                        "parking": item["parking"]
+                    },
+                    "source": {
+                        "originalUrl": "https://www.spl.org",
+                        "sourceName": "西雅图公共图书馆 (SPL)"
+                    }
                 }
-            }
-        })
+            })
 
-    print(f"[SPL] 成功生成 {len(features)} 条高质量市区亲子活动。")
+    print(f"[SPL] 成功生成 {len(features)} 条覆盖未来 30 天各周末的高质量市区亲子活动。")
     return features
 
 if __name__ == "__main__":
