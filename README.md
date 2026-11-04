@@ -118,3 +118,9 @@ The project runs unattended through `.github/workflows/sync-events.yml`:
 ## 📄 Disclaimer
 
 All event schedules and details are gathered automatically from public domain sources and are intended solely for personal weekend trip planning. Please verify admission costs, registration requirements, and weather-related cancellations directly through official venue websites before traveling.
+
+## 🙏 Acknowledgements
+
+- UI design and product concept inspired by the Bay Area Kids Activity Guide project.
+- Map tiles provided by [OpenStreetMap](https://www.openstreetmap.org/).
+- Event schedules sourced from public library catalogs (SPL, KCLS) and regional cultural venue websites.
