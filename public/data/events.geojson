@@ -1,895 +1,10 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generatedAt": "\"42127916664\"",
-    "totalCount": 87
+    "generatedAt": "\"43341852173\"",
+    "totalCount": 95
   },
   "features": [
-    {
-      "type": "Feature",
-      "id": "evt_venue_kidsquest_20261107_1",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.1936,
-          47.6208
-        ]
-      },
-      "properties": {
-        "title": "KidsQuest Weekend STEAM Exploration (幼儿动手科学与水流实验)",
-        "summary": "针对2-8岁儿童的互动体验，包含真实的攀爬结构、水动力实验台与创客粘土手工空间。",
-        "organizer": "KidsQuest Children's Museum",
-        "category": "exploration_exp",
-        "location": {
-          "venueName": "KidsQuest Children's Museum",
-          "address": "1116 110th Ave NE, Bellevue, WA 98004",
-          "city": "Bellevue",
-          "region": "eastside",
-          "googleMapsUrl": "https://maps.google.com/?q=KidsQuest+Children's+Museum"
-        },
-        "schedule": {
-          "startDate": "2026-11-07",
-          "endDate": "2026-11-07",
-          "timeSlot": "morning",
-          "displayTime": "11月07日 (周六) · 10:00–12:30"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool",
-            "elementary"
-          ],
-          "environment": "indoor",
-          "isFree": false,
-          "priceLabel": "$15 门票",
-          "requiresRsvp": true,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "paid_garage"
-        },
-        "source": {
-          "originalUrl": "https://www.kidsquestmuseum.org",
-          "sourceName": "KidsQuest Children's Museum"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_venue_bellevuegarden_20261107_5",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.1795,
-          47.6105
-        ]
-      },
-      "properties": {
-        "title": "Weekend Nature Walk & Plant Scavenger Hunt (植物园寻宝漫步)",
-        "summary": "免费开放的林间步道与悬索桥探险，领取任务卡寻找秋季浆果、巨型蕨类与苔藓生态。",
-        "organizer": "Bellevue Botanical Garden",
-        "category": "nature_animals",
-        "location": {
-          "venueName": "Bellevue Botanical Garden",
-          "address": "12001 Main St, Bellevue, WA 98005",
-          "city": "Bellevue",
-          "region": "eastside",
-          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Botanical+Garden"
-        },
-        "schedule": {
-          "startDate": "2026-11-07",
-          "endDate": "2026-11-07",
-          "timeSlot": "morning",
-          "displayTime": "11月07日 (周六) · 10:00–12:00"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool",
-            "elementary"
-          ],
-          "environment": "outdoor",
-          "isFree": true,
-          "priceLabel": "免费入场",
-          "requiresRsvp": false,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "free_lot"
-        },
-        "source": {
-          "originalUrl": "https://bellevuebotanical.org",
-          "sourceName": "Bellevue Botanical Garden"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_spl_20261107_1",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3328,
-          47.6067
-        ]
-      },
-      "properties": {
-        "title": "Family Storytime & Puppet Play (全年龄家庭绘本与木偶剧)",
-        "summary": "西雅图中央图书馆少儿馆经典周末活动，包含互动绘本共读、韵律儿歌与手指木偶游戏。",
-        "organizer": "Seattle Public Library",
-        "category": "music_crafts",
-        "location": {
-          "venueName": "SPL - Central Library",
-          "address": "1000 4th Ave, Seattle, WA 98104",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=Central+Library+Seattle+Public+Library"
-        },
-        "schedule": {
-          "startDate": "2026-11-07",
-          "endDate": "2026-11-07",
-          "timeSlot": "morning",
-          "displayTime": "11月07日 (周六) · 10:30–11:15"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool",
-            "elementary"
-          ],
-          "environment": "indoor",
-          "isFree": true,
-          "priceLabel": "免费入场",
-          "requiresRsvp": false,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "paid_garage"
-        },
-        "source": {
-          "originalUrl": "https://www.spl.org",
-          "sourceName": "西雅图公共图书馆 (SPL)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_spl_20261107_2",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3328,
-          47.6067
-        ]
-      },
-      "properties": {
-        "title": "Kids STEAM Saturday: LEGO Builders (乐高与机械拼搭工坊)",
-        "summary": "针对学龄前和小学低年级儿童设计的动手空间，提供丰富的积木与主题挑战任务卡。",
-        "organizer": "Seattle Public Library",
-        "category": "exploration_exp",
-        "location": {
-          "venueName": "SPL - Central Library",
-          "address": "1000 4th Ave, Seattle, WA 98104",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=Central+Library+Seattle+Public+Library"
-        },
-        "schedule": {
-          "startDate": "2026-11-07",
-          "endDate": "2026-11-07",
-          "timeSlot": "afternoon",
-          "displayTime": "11月07日 (周六) · 14:00–15:30"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "elementary"
-          ],
-          "environment": "indoor",
-          "isFree": true,
-          "priceLabel": "免费入场",
-          "requiresRsvp": false,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "paid_garage"
-        },
-        "source": {
-          "originalUrl": "https://www.spl.org",
-          "sourceName": "西雅图公共图书馆 (SPL)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_spl_20261107_3",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3846,
-          47.6685
-        ]
-      },
-      "properties": {
-        "title": "Toddler Rhyme & Movement (学步儿音乐与韵律游戏)",
-        "summary": "专为0-3岁低幼设计的音乐互动活动，鼓励大肢体运动、节奏感培养及亲子共读习惯。",
-        "organizer": "Seattle Public Library",
-        "category": "music_crafts",
-        "location": {
-          "venueName": "SPL - Ballard Branch",
-          "address": "5614 22nd Ave NW, Seattle, WA 98107",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=Ballard+Branch+Seattle+Public+Library"
-        },
-        "schedule": {
-          "startDate": "2026-11-07",
-          "endDate": "2026-11-07",
-          "timeSlot": "morning",
-          "displayTime": "11月07日 (周六) · 10:30–11:00"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool"
-          ],
-          "environment": "indoor",
-          "isFree": true,
-          "priceLabel": "免费入场",
-          "requiresRsvp": false,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "free_lot"
-        },
-        "source": {
-          "originalUrl": "https://www.spl.org",
-          "sourceName": "西雅图公共图书馆 (SPL)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_spl_20261107_5",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3116,
-          47.6657
-        ]
-      },
-      "properties": {
-        "title": "Bilingual Storytime (西雅图双语绘本共读会)",
-        "summary": "华大分馆特色双语读书会，通过绘本领读和童谣互动建立沉浸式早期语言环境。",
-        "organizer": "Seattle Public Library",
-        "category": "music_crafts",
-        "location": {
-          "venueName": "SPL - University Branch",
-          "address": "5009 Roosevelt Way NE, Seattle, WA 98105",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=University+Branch+Seattle+Public+Library"
-        },
-        "schedule": {
-          "startDate": "2026-11-07",
-          "endDate": "2026-11-07",
-          "timeSlot": "morning",
-          "displayTime": "11月07日 (周六) · 11:00–11:45"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool"
-          ],
-          "environment": "indoor",
-          "isFree": true,
-          "priceLabel": "免费入场",
-          "requiresRsvp": false,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "street"
-        },
-        "source": {
-          "originalUrl": "https://www.spl.org",
-          "sourceName": "西雅图公共图书馆 (SPL)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_venue_museumofflight_20261107_3",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3005,
-          47.5186
-        ]
-      },
-      "properties": {
-        "title": "AeroSpace Weekend Lab: Rocket Science (飞行博物馆少儿火箭拼搭)",
-        "summary": "在巨大机库旁动手组装气动小火箭，探索气压与空气动力学原理，参观退役空军一号客机。",
-        "organizer": "The Museum of Flight",
-        "category": "exploration_exp",
-        "location": {
-          "venueName": "The Museum of Flight",
-          "address": "9404 E Marginal Way S, Seattle, WA 98108",
-          "city": "Seattle",
-          "region": "south",
-          "googleMapsUrl": "https://maps.google.com/?q=The+Museum+of+Flight"
-        },
-        "schedule": {
-          "startDate": "2026-11-07",
-          "endDate": "2026-11-07",
-          "timeSlot": "morning",
-          "displayTime": "11月07日 (周六) · 11:00–14:00"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "elementary"
-          ],
-          "environment": "indoor",
-          "isFree": false,
-          "priceLabel": "含在门票内",
-          "requiresRsvp": true,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "free_lot"
-        },
-        "source": {
-          "originalUrl": "https://www.museumofflight.org",
-          "sourceName": "The Museum of Flight"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_venue_burkemuseum_20261107_7",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3113,
-          47.6606
-        ]
-      },
-      "properties": {
-        "title": "Dino Discovery & Fossil Prep Viewing (恐龙化石修复现场体验)",
-        "summary": "透过透明落地窗亲眼观察古生物学家修复霸王龙与三角龙化石，少儿互动展区提供摸化石环节。",
-        "organizer": "Burke Museum of Natural History and Culture",
-        "category": "nature_animals",
-        "location": {
-          "venueName": "Burke Museum of Natural History and Culture",
-          "address": "4300 15th Ave NE, Seattle, WA 98105",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=Burke+Museum"
-        },
-        "schedule": {
-          "startDate": "2026-11-07",
-          "endDate": "2026-11-07",
-          "timeSlot": "morning",
-          "displayTime": "11月07日 (周六) · 10:30–12:30"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool",
-            "elementary"
-          ],
-          "environment": "indoor",
-          "isFree": false,
-          "priceLabel": "$22 (4岁以下免费)",
-          "requiresRsvp": true,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "paid_garage"
-        },
-        "source": {
-          "originalUrl": "https://www.burkemuseum.org",
-          "sourceName": "Burke Museum of Natural History and Culture"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_venue_udistrictmarket_20261107_8",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3131,
-          47.6657
-        ]
-      },
-      "properties": {
-        "title": "U-District Saturday Farmers Market (华大农夫市集亲子采购漫步)",
-        "summary": "全年无休的有机农夫市集，品尝华盛顿州当季苹果汁、热烘焙面包，常有街头小提琴手互动演出。",
-        "organizer": "University District Farmers Market",
-        "category": "festivals_markets",
-        "location": {
-          "venueName": "University District Farmers Market",
-          "address": "5031 University Way NE, Seattle, WA 98105",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=University+District+Farmers+Market"
-        },
-        "schedule": {
-          "startDate": "2026-11-07",
-          "endDate": "2026-11-07",
-          "timeSlot": "morning",
-          "displayTime": "11月07日 (周六) · 09:00–14:00"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool",
-            "elementary"
-          ],
-          "environment": "outdoor",
-          "isFree": true,
-          "priceLabel": "免费漫步",
-          "requiresRsvp": false,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "street"
-        },
-        "source": {
-          "originalUrl": "https://seattlefarmersmarkets.org/udfm",
-          "sourceName": "University District Farmers Market"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_venue_woodlandparkzoo_20261107_10",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3541,
-          47.6684
-        ]
-      },
-      "properties": {
-        "title": "Zoo Keeper Talk: Grizzly & River Otters (棕熊与水獭保育员近距离讲解)",
-        "summary": "林地公园动物园标志性周末科普环节，观察北美棕熊捕食活鱼，倾听保育员讲解野生动物救援趣事。",
-        "organizer": "Woodland Park Zoo",
-        "category": "nature_animals",
-        "location": {
-          "venueName": "Woodland Park Zoo",
-          "address": "5500 Phinney Ave N, Seattle, WA 98103",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=Woodland+Park+Zoo"
-        },
-        "schedule": {
-          "startDate": "2026-11-07",
-          "endDate": "2026-11-07",
-          "timeSlot": "morning",
-          "displayTime": "11月07日 (周六) · 11:00–11:45"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool",
-            "elementary"
-          ],
-          "environment": "outdoor",
-          "isFree": false,
-          "priceLabel": "需购门票",
-          "requiresRsvp": true,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "paid_garage"
-        },
-        "source": {
-          "originalUrl": "https://www.zoo.org",
-          "sourceName": "Woodland Park Zoo"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_venue_pacsci_20261107_12",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3518,
-          47.6196
-        ]
-      },
-      "properties": {
-        "title": "Tropical Butterfly House & Tinkering Workshop (热带蝴蝶馆与机械拼装)",
-        "summary": "穿行在数百只自由飞翔的活体热带蝴蝶温室中，随后在动手实验室内用简易电路点亮小装置。",
-        "organizer": "Pacific Science Center",
-        "category": "exploration_exp",
-        "location": {
-          "venueName": "Pacific Science Center",
-          "address": "200 2nd Ave N, Seattle, WA 98109",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=Pacific+Science+Center"
-        },
-        "schedule": {
-          "startDate": "2026-11-07",
-          "endDate": "2026-11-07",
-          "timeSlot": "afternoon",
-          "displayTime": "11月07日 (周六) · 13:30–15:30"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool",
-            "elementary"
-          ],
-          "environment": "indoor",
-          "isFree": false,
-          "priceLabel": "需购门票",
-          "requiresRsvp": true,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "paid_garage"
-        },
-        "source": {
-          "originalUrl": "https://pacificsciencecenter.org",
-          "sourceName": "Pacific Science Center"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_venue_kidsquest_20261108_2",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.1936,
-          47.6208
-        ]
-      },
-      "properties": {
-        "title": "KidsQuest Sensory & Art Station (亲子感官拓印与色彩工坊)",
-        "summary": "周末下午开放式艺术工作室，提供可水洗颜料、触感材料与拼贴工具，适合全家自由发挥。",
-        "organizer": "KidsQuest Children's Museum",
-        "category": "music_crafts",
-        "location": {
-          "venueName": "KidsQuest Children's Museum",
-          "address": "1116 110th Ave NE, Bellevue, WA 98004",
-          "city": "Bellevue",
-          "region": "eastside",
-          "googleMapsUrl": "https://maps.google.com/?q=KidsQuest+Children's+Museum"
-        },
-        "schedule": {
-          "startDate": "2026-11-08",
-          "endDate": "2026-11-08",
-          "timeSlot": "afternoon",
-          "displayTime": "11月08日 (周日) · 13:30–16:00"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool"
-          ],
-          "environment": "indoor",
-          "isFree": false,
-          "priceLabel": "$15 门票",
-          "requiresRsvp": true,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "paid_garage"
-        },
-        "source": {
-          "originalUrl": "https://www.kidsquestmuseum.org",
-          "sourceName": "KidsQuest Children's Museum"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_venue_bellevuegarden_20261108_6",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.1795,
-          47.6105
-        ]
-      },
-      "properties": {
-        "title": "Family Botanical Sketching (林间亲子自然写生与手作)",
-        "summary": "在植物园落叶林与日式庭园中席地而坐，用炭笔与植物蜡笔捕捉西北太平洋秋日自然风景。",
-        "organizer": "Bellevue Botanical Garden",
-        "category": "music_crafts",
-        "location": {
-          "venueName": "Bellevue Botanical Garden",
-          "address": "12001 Main St, Bellevue, WA 98005",
-          "city": "Bellevue",
-          "region": "eastside",
-          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Botanical+Garden"
-        },
-        "schedule": {
-          "startDate": "2026-11-08",
-          "endDate": "2026-11-08",
-          "timeSlot": "afternoon",
-          "displayTime": "11月08日 (周日) · 14:00–15:30"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "elementary"
-          ],
-          "environment": "outdoor",
-          "isFree": true,
-          "priceLabel": "免费入场",
-          "requiresRsvp": false,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "free_lot"
-        },
-        "source": {
-          "originalUrl": "https://bellevuebotanical.org",
-          "sourceName": "Bellevue Botanical Garden"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_spl_20261108_4",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3218,
-          47.6231
-        ]
-      },
-      "properties": {
-        "title": "Weekend Craft Station: Nature Prints (自然植物拓印手工坊)",
-        "summary": "结合社区绿地植物标本制作自然手作书签，锻炼孩子手部精细动作与色彩审美。",
-        "organizer": "Seattle Public Library",
-        "category": "music_crafts",
-        "location": {
-          "venueName": "SPL - Capitol Hill Branch",
-          "address": "425 Harvard Ave E, Seattle, WA 98102",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=Capitol+Hill+Branch+Seattle+Public+Library"
-        },
-        "schedule": {
-          "startDate": "2026-11-08",
-          "endDate": "2026-11-08",
-          "timeSlot": "afternoon",
-          "displayTime": "11月08日 (周日) · 13:30–15:00"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool",
-            "elementary"
-          ],
-          "environment": "indoor",
-          "isFree": true,
-          "priceLabel": "免费入场",
-          "requiresRsvp": false,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "street"
-        },
-        "source": {
-          "originalUrl": "https://www.spl.org",
-          "sourceName": "西雅图公共图书馆 (SPL)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_spl_20261108_6",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3831,
-          47.5612
-        ]
-      },
-      "properties": {
-        "title": "Baby Play & Learn (婴儿爬爬与感官探索)",
-        "summary": "为18个月以下婴儿及其照护者准备的感官地垫活动，提供安全的多材质教具与育儿交流环境。",
-        "organizer": "Seattle Public Library",
-        "category": "exploration_exp",
-        "location": {
-          "venueName": "SPL - West Seattle Branch",
-          "address": "2306 42nd Ave SW, Seattle, WA 98116",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=West+Seattle+Branch+Seattle+Public+Library"
-        },
-        "schedule": {
-          "startDate": "2026-11-08",
-          "endDate": "2026-11-08",
-          "timeSlot": "morning",
-          "displayTime": "11月08日 (周日) · 10:30–11:30"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool"
-          ],
-          "environment": "indoor",
-          "isFree": true,
-          "priceLabel": "免费入场",
-          "requiresRsvp": false,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "free_lot"
-        },
-        "source": {
-          "originalUrl": "https://www.spl.org",
-          "sourceName": "西雅图公共图书馆 (SPL)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_venue_museumofflight_20261108_4",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3005,
-          47.5186
-        ]
-      },
-      "properties": {
-        "title": "Flight Explorer Weekend: Cockpit Discovery (少年机长座舱体验)",
-        "summary": "开放真实战斗机与民航驾驶舱供孩子登上操控位，退役飞行员志愿者现场答疑解惑。",
-        "organizer": "The Museum of Flight",
-        "category": "exploration_exp",
-        "location": {
-          "venueName": "The Museum of Flight",
-          "address": "9404 E Marginal Way S, Seattle, WA 98108",
-          "city": "Seattle",
-          "region": "south",
-          "googleMapsUrl": "https://maps.google.com/?q=The+Museum+of+Flight"
-        },
-        "schedule": {
-          "startDate": "2026-11-08",
-          "endDate": "2026-11-08",
-          "timeSlot": "afternoon",
-          "displayTime": "11月08日 (周日) · 13:00–15:30"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool",
-            "elementary"
-          ],
-          "environment": "indoor",
-          "isFree": false,
-          "priceLabel": "含在门票内",
-          "requiresRsvp": true,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "free_lot"
-        },
-        "source": {
-          "originalUrl": "https://www.museumofflight.org",
-          "sourceName": "The Museum of Flight"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_venue_ballardmarket_20261108_9",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3838,
-          47.6678
-        ]
-      },
-      "properties": {
-        "title": "Ballard Sunday Market: Street Buskers & Crafts (巴拉德周日市集与手作探秘)",
-        "summary": "西雅图最热闹的露天市集之一，聚集大量本地独立手作匠人、街头魔术师与家庭友好摊位。",
-        "organizer": "Ballard Farmers Market",
-        "category": "festivals_markets",
-        "location": {
-          "venueName": "Ballard Farmers Market",
-          "address": "5300 Ballard Ave NW, Seattle, WA 98107",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=Ballard+Farmers+Market"
-        },
-        "schedule": {
-          "startDate": "2026-11-08",
-          "endDate": "2026-11-08",
-          "timeSlot": "morning",
-          "displayTime": "11月08日 (周日) · 10:00–15:00"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool",
-            "elementary"
-          ],
-          "environment": "outdoor",
-          "isFree": true,
-          "priceLabel": "免费漫步",
-          "requiresRsvp": false,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "street"
-        },
-        "source": {
-          "originalUrl": "https://www.sfmamarkets.com/visit-ballard-farmers-market",
-          "sourceName": "Ballard Farmers Market"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_venue_seattleaquarium_20261108_11",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3426,
-          47.6074
-        ]
-      },
-      "properties": {
-        "title": "Tide Pool Discovery & Ocean Pavilion (潮间带生物触摸与新馆探秘)",
-        "summary": "全新开放的海洋馆展区，孩子可亲自触摸海星与海葵，欣赏大型珊瑚礁生态与印太暖水鱼群。",
-        "organizer": "Seattle Aquarium",
-        "category": "nature_animals",
-        "location": {
-          "venueName": "Seattle Aquarium",
-          "address": "1483 Alaskan Way, Pier 59, Seattle, WA 98101",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=Seattle+Aquarium"
-        },
-        "schedule": {
-          "startDate": "2026-11-08",
-          "endDate": "2026-11-08",
-          "timeSlot": "morning",
-          "displayTime": "11月08日 (周日) · 10:30–12:00"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "preschool",
-            "elementary"
-          ],
-          "environment": "indoor",
-          "isFree": false,
-          "priceLabel": "需预约门票",
-          "requiresRsvp": true,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "paid_garage"
-        },
-        "source": {
-          "originalUrl": "https://www.seattleaquarium.org",
-          "sourceName": "Seattle Aquarium"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "evt_venue_mopop_20261108_13",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3483,
-          47.6215
-        ]
-      },
-      "properties": {
-        "title": "Sound Lab Jam Session for Kids (少儿音乐实验室即兴演奏体验)",
-        "summary": "配备真实电吉他、电子鼓、合成器与专业调音混音台的隔音小录音间，零门槛启发孩子音乐兴趣。",
-        "organizer": "Museum of Pop Culture (MoPOP)",
-        "category": "music_crafts",
-        "location": {
-          "venueName": "Museum of Pop Culture (MoPOP)",
-          "address": "325 5th Ave N, Seattle, WA 98109",
-          "city": "Seattle",
-          "region": "seattle",
-          "googleMapsUrl": "https://maps.google.com/?q=MoPOP"
-        },
-        "schedule": {
-          "startDate": "2026-11-08",
-          "endDate": "2026-11-08",
-          "timeSlot": "afternoon",
-          "displayTime": "11月08日 (周日) · 14:00–16:00"
-        },
-        "familyAttributes": {
-          "ageBuckets": [
-            "elementary"
-          ],
-          "environment": "indoor",
-          "isFree": false,
-          "priceLabel": "需购门票",
-          "requiresRsvp": true,
-          "strollerFriendly": true,
-          "hasChangingTable": true,
-          "parking": "paid_garage"
-        },
-        "source": {
-          "originalUrl": "https://www.mopop.org",
-          "sourceName": "Museum of Pop Culture (MoPOP)"
-        }
-      }
-    },
     {
       "type": "Feature",
       "id": "evt_venue_kidsquest_20261114_1",
@@ -4055,6 +3170,1263 @@
         "source": {
           "originalUrl": "https://pacificsciencecenter.org",
           "sourceName": "Pacific Science Center"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_kidsquest_20261206_2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1936,
+          47.6208
+        ]
+      },
+      "properties": {
+        "title": "KidsQuest Sensory & Art Station (亲子感官拓印与色彩工坊)",
+        "summary": "周末下午开放式艺术工作室，提供可水洗颜料、触感材料与拼贴工具，适合全家自由发挥。",
+        "organizer": "KidsQuest Children's Museum",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "KidsQuest Children's Museum",
+          "address": "1116 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=KidsQuest+Children's+Museum"
+        },
+        "schedule": {
+          "startDate": "2026-12-06",
+          "endDate": "2026-12-06",
+          "timeSlot": "afternoon",
+          "displayTime": "12月06日 (周日) · 13:30–16:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "$15 门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.kidsquestmuseum.org",
+          "sourceName": "KidsQuest Children's Museum"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_bellevuegarden_20261206_6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1795,
+          47.6105
+        ]
+      },
+      "properties": {
+        "title": "Family Botanical Sketching (林间亲子自然写生与手作)",
+        "summary": "在植物园落叶林与日式庭园中席地而坐，用炭笔与植物蜡笔捕捉西北太平洋秋日自然风景。",
+        "organizer": "Bellevue Botanical Garden",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Botanical Garden",
+          "address": "12001 Main St, Bellevue, WA 98005",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Botanical+Garden"
+        },
+        "schedule": {
+          "startDate": "2026-12-06",
+          "endDate": "2026-12-06",
+          "timeSlot": "afternoon",
+          "displayTime": "12月06日 (周日) · 14:00–15:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "outdoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://bellevuebotanical.org",
+          "sourceName": "Bellevue Botanical Garden"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261206_4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3218,
+          47.6231
+        ]
+      },
+      "properties": {
+        "title": "Weekend Craft Station: Nature Prints (自然植物拓印手工坊)",
+        "summary": "结合社区绿地植物标本制作自然手作书签，锻炼孩子手部精细动作与色彩审美。",
+        "organizer": "Seattle Public Library",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "SPL - Capitol Hill Branch",
+          "address": "425 Harvard Ave E, Seattle, WA 98102",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Capitol+Hill+Branch+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-12-06",
+          "endDate": "2026-12-06",
+          "timeSlot": "afternoon",
+          "displayTime": "12月06日 (周日) · 13:30–15:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "street"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261206_6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3831,
+          47.5612
+        ]
+      },
+      "properties": {
+        "title": "Baby Play & Learn (婴儿爬爬与感官探索)",
+        "summary": "为18个月以下婴儿及其照护者准备的感官地垫活动，提供安全的多材质教具与育儿交流环境。",
+        "organizer": "Seattle Public Library",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "SPL - West Seattle Branch",
+          "address": "2306 42nd Ave SW, Seattle, WA 98116",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=West+Seattle+Branch+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-12-06",
+          "endDate": "2026-12-06",
+          "timeSlot": "morning",
+          "displayTime": "12月06日 (周日) · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_museumofflight_20261206_4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3005,
+          47.5186
+        ]
+      },
+      "properties": {
+        "title": "Flight Explorer Weekend: Cockpit Discovery (少年机长座舱体验)",
+        "summary": "开放真实战斗机与民航驾驶舱供孩子登上操控位，退役飞行员志愿者现场答疑解惑。",
+        "organizer": "The Museum of Flight",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "The Museum of Flight",
+          "address": "9404 E Marginal Way S, Seattle, WA 98108",
+          "city": "Seattle",
+          "region": "south",
+          "googleMapsUrl": "https://maps.google.com/?q=The+Museum+of+Flight"
+        },
+        "schedule": {
+          "startDate": "2026-12-06",
+          "endDate": "2026-12-06",
+          "timeSlot": "afternoon",
+          "displayTime": "12月06日 (周日) · 13:00–15:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "含在门票内",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://www.museumofflight.org",
+          "sourceName": "The Museum of Flight"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_ballardmarket_20261206_9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3838,
+          47.6678
+        ]
+      },
+      "properties": {
+        "title": "Ballard Sunday Market: Street Buskers & Crafts (巴拉德周日市集与手作探秘)",
+        "summary": "西雅图最热闹的露天市集之一，聚集大量本地独立手作匠人、街头魔术师与家庭友好摊位。",
+        "organizer": "Ballard Farmers Market",
+        "category": "festivals_markets",
+        "location": {
+          "venueName": "Ballard Farmers Market",
+          "address": "5300 Ballard Ave NW, Seattle, WA 98107",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Ballard+Farmers+Market"
+        },
+        "schedule": {
+          "startDate": "2026-12-06",
+          "endDate": "2026-12-06",
+          "timeSlot": "morning",
+          "displayTime": "12月06日 (周日) · 10:00–15:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "outdoor",
+          "isFree": true,
+          "priceLabel": "免费漫步",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "street"
+        },
+        "source": {
+          "originalUrl": "https://www.sfmamarkets.com/visit-ballard-farmers-market",
+          "sourceName": "Ballard Farmers Market"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_seattleaquarium_20261206_11",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3426,
+          47.6074
+        ]
+      },
+      "properties": {
+        "title": "Tide Pool Discovery & Ocean Pavilion (潮间带生物触摸与新馆探秘)",
+        "summary": "全新开放的海洋馆展区，孩子可亲自触摸海星与海葵，欣赏大型珊瑚礁生态与印太暖水鱼群。",
+        "organizer": "Seattle Aquarium",
+        "category": "nature_animals",
+        "location": {
+          "venueName": "Seattle Aquarium",
+          "address": "1483 Alaskan Way, Pier 59, Seattle, WA 98101",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Seattle+Aquarium"
+        },
+        "schedule": {
+          "startDate": "2026-12-06",
+          "endDate": "2026-12-06",
+          "timeSlot": "morning",
+          "displayTime": "12月06日 (周日) · 10:30–12:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "需预约门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.seattleaquarium.org",
+          "sourceName": "Seattle Aquarium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_mopop_20261206_13",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3483,
+          47.6215
+        ]
+      },
+      "properties": {
+        "title": "Sound Lab Jam Session for Kids (少儿音乐实验室即兴演奏体验)",
+        "summary": "配备真实电吉他、电子鼓、合成器与专业调音混音台的隔音小录音间，零门槛启发孩子音乐兴趣。",
+        "organizer": "Museum of Pop Culture (MoPOP)",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Museum of Pop Culture (MoPOP)",
+          "address": "325 5th Ave N, Seattle, WA 98109",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=MoPOP"
+        },
+        "schedule": {
+          "startDate": "2026-12-06",
+          "endDate": "2026-12-06",
+          "timeSlot": "afternoon",
+          "displayTime": "12月06日 (周日) · 14:00–16:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "需购门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.mopop.org",
+          "sourceName": "Museum of Pop Culture (MoPOP)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_kidsquest_20261212_1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1936,
+          47.6208
+        ]
+      },
+      "properties": {
+        "title": "KidsQuest Weekend STEAM Exploration (幼儿动手科学与水流实验)",
+        "summary": "针对2-8岁儿童的互动体验，包含真实的攀爬结构、水动力实验台与创客粘土手工空间。",
+        "organizer": "KidsQuest Children's Museum",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "KidsQuest Children's Museum",
+          "address": "1116 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=KidsQuest+Children's+Museum"
+        },
+        "schedule": {
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-12",
+          "timeSlot": "morning",
+          "displayTime": "12月12日 (周六) · 10:00–12:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "$15 门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.kidsquestmuseum.org",
+          "sourceName": "KidsQuest Children's Museum"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_bellevuegarden_20261212_5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1795,
+          47.6105
+        ]
+      },
+      "properties": {
+        "title": "Weekend Nature Walk & Plant Scavenger Hunt (植物园寻宝漫步)",
+        "summary": "免费开放的林间步道与悬索桥探险，领取任务卡寻找秋季浆果、巨型蕨类与苔藓生态。",
+        "organizer": "Bellevue Botanical Garden",
+        "category": "nature_animals",
+        "location": {
+          "venueName": "Bellevue Botanical Garden",
+          "address": "12001 Main St, Bellevue, WA 98005",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Botanical+Garden"
+        },
+        "schedule": {
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-12",
+          "timeSlot": "morning",
+          "displayTime": "12月12日 (周六) · 10:00–12:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "outdoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://bellevuebotanical.org",
+          "sourceName": "Bellevue Botanical Garden"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261212_1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3328,
+          47.6067
+        ]
+      },
+      "properties": {
+        "title": "Family Storytime & Puppet Play (全年龄家庭绘本与木偶剧)",
+        "summary": "西雅图中央图书馆少儿馆经典周末活动，包含互动绘本共读、韵律儿歌与手指木偶游戏。",
+        "organizer": "Seattle Public Library",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "SPL - Central Library",
+          "address": "1000 4th Ave, Seattle, WA 98104",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Central+Library+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-12",
+          "timeSlot": "morning",
+          "displayTime": "12月12日 (周六) · 10:30–11:15"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261212_2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3328,
+          47.6067
+        ]
+      },
+      "properties": {
+        "title": "Kids STEAM Saturday: LEGO Builders (乐高与机械拼搭工坊)",
+        "summary": "针对学龄前和小学低年级儿童设计的动手空间，提供丰富的积木与主题挑战任务卡。",
+        "organizer": "Seattle Public Library",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "SPL - Central Library",
+          "address": "1000 4th Ave, Seattle, WA 98104",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Central+Library+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-12",
+          "timeSlot": "afternoon",
+          "displayTime": "12月12日 (周六) · 14:00–15:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261212_3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3846,
+          47.6685
+        ]
+      },
+      "properties": {
+        "title": "Toddler Rhyme & Movement (学步儿音乐与韵律游戏)",
+        "summary": "专为0-3岁低幼设计的音乐互动活动，鼓励大肢体运动、节奏感培养及亲子共读习惯。",
+        "organizer": "Seattle Public Library",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "SPL - Ballard Branch",
+          "address": "5614 22nd Ave NW, Seattle, WA 98107",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Ballard+Branch+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-12",
+          "timeSlot": "morning",
+          "displayTime": "12月12日 (周六) · 10:30–11:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261212_5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3116,
+          47.6657
+        ]
+      },
+      "properties": {
+        "title": "Bilingual Storytime (西雅图双语绘本共读会)",
+        "summary": "华大分馆特色双语读书会，通过绘本领读和童谣互动建立沉浸式早期语言环境。",
+        "organizer": "Seattle Public Library",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "SPL - University Branch",
+          "address": "5009 Roosevelt Way NE, Seattle, WA 98105",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=University+Branch+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-12",
+          "timeSlot": "morning",
+          "displayTime": "12月12日 (周六) · 11:00–11:45"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "street"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_museumofflight_20261212_3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3005,
+          47.5186
+        ]
+      },
+      "properties": {
+        "title": "AeroSpace Weekend Lab: Rocket Science (飞行博物馆少儿火箭拼搭)",
+        "summary": "在巨大机库旁动手组装气动小火箭，探索气压与空气动力学原理，参观退役空军一号客机。",
+        "organizer": "The Museum of Flight",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "The Museum of Flight",
+          "address": "9404 E Marginal Way S, Seattle, WA 98108",
+          "city": "Seattle",
+          "region": "south",
+          "googleMapsUrl": "https://maps.google.com/?q=The+Museum+of+Flight"
+        },
+        "schedule": {
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-12",
+          "timeSlot": "morning",
+          "displayTime": "12月12日 (周六) · 11:00–14:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "含在门票内",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://www.museumofflight.org",
+          "sourceName": "The Museum of Flight"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_burkemuseum_20261212_7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3113,
+          47.6606
+        ]
+      },
+      "properties": {
+        "title": "Dino Discovery & Fossil Prep Viewing (恐龙化石修复现场体验)",
+        "summary": "透过透明落地窗亲眼观察古生物学家修复霸王龙与三角龙化石，少儿互动展区提供摸化石环节。",
+        "organizer": "Burke Museum of Natural History and Culture",
+        "category": "nature_animals",
+        "location": {
+          "venueName": "Burke Museum of Natural History and Culture",
+          "address": "4300 15th Ave NE, Seattle, WA 98105",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Burke+Museum"
+        },
+        "schedule": {
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-12",
+          "timeSlot": "morning",
+          "displayTime": "12月12日 (周六) · 10:30–12:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "$22 (4岁以下免费)",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.burkemuseum.org",
+          "sourceName": "Burke Museum of Natural History and Culture"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_udistrictmarket_20261212_8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3131,
+          47.6657
+        ]
+      },
+      "properties": {
+        "title": "U-District Saturday Farmers Market (华大农夫市集亲子采购漫步)",
+        "summary": "全年无休的有机农夫市集，品尝华盛顿州当季苹果汁、热烘焙面包，常有街头小提琴手互动演出。",
+        "organizer": "University District Farmers Market",
+        "category": "festivals_markets",
+        "location": {
+          "venueName": "University District Farmers Market",
+          "address": "5031 University Way NE, Seattle, WA 98105",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=University+District+Farmers+Market"
+        },
+        "schedule": {
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-12",
+          "timeSlot": "morning",
+          "displayTime": "12月12日 (周六) · 09:00–14:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "outdoor",
+          "isFree": true,
+          "priceLabel": "免费漫步",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "street"
+        },
+        "source": {
+          "originalUrl": "https://seattlefarmersmarkets.org/udfm",
+          "sourceName": "University District Farmers Market"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_woodlandparkzoo_20261212_10",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3541,
+          47.6684
+        ]
+      },
+      "properties": {
+        "title": "Zoo Keeper Talk: Grizzly & River Otters (棕熊与水獭保育员近距离讲解)",
+        "summary": "林地公园动物园标志性周末科普环节，观察北美棕熊捕食活鱼，倾听保育员讲解野生动物救援趣事。",
+        "organizer": "Woodland Park Zoo",
+        "category": "nature_animals",
+        "location": {
+          "venueName": "Woodland Park Zoo",
+          "address": "5500 Phinney Ave N, Seattle, WA 98103",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Woodland+Park+Zoo"
+        },
+        "schedule": {
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-12",
+          "timeSlot": "morning",
+          "displayTime": "12月12日 (周六) · 11:00–11:45"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "outdoor",
+          "isFree": false,
+          "priceLabel": "需购门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.zoo.org",
+          "sourceName": "Woodland Park Zoo"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_pacsci_20261212_12",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3518,
+          47.6196
+        ]
+      },
+      "properties": {
+        "title": "Tropical Butterfly House & Tinkering Workshop (热带蝴蝶馆与机械拼装)",
+        "summary": "穿行在数百只自由飞翔的活体热带蝴蝶温室中，随后在动手实验室内用简易电路点亮小装置。",
+        "organizer": "Pacific Science Center",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "Pacific Science Center",
+          "address": "200 2nd Ave N, Seattle, WA 98109",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Pacific+Science+Center"
+        },
+        "schedule": {
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-12",
+          "timeSlot": "afternoon",
+          "displayTime": "12月12日 (周六) · 13:30–15:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "需购门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://pacificsciencecenter.org",
+          "sourceName": "Pacific Science Center"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_kidsquest_20261213_2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1936,
+          47.6208
+        ]
+      },
+      "properties": {
+        "title": "KidsQuest Sensory & Art Station (亲子感官拓印与色彩工坊)",
+        "summary": "周末下午开放式艺术工作室，提供可水洗颜料、触感材料与拼贴工具，适合全家自由发挥。",
+        "organizer": "KidsQuest Children's Museum",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "KidsQuest Children's Museum",
+          "address": "1116 110th Ave NE, Bellevue, WA 98004",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=KidsQuest+Children's+Museum"
+        },
+        "schedule": {
+          "startDate": "2026-12-13",
+          "endDate": "2026-12-13",
+          "timeSlot": "afternoon",
+          "displayTime": "12月13日 (周日) · 13:30–16:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "$15 门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.kidsquestmuseum.org",
+          "sourceName": "KidsQuest Children's Museum"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_bellevuegarden_20261213_6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1795,
+          47.6105
+        ]
+      },
+      "properties": {
+        "title": "Family Botanical Sketching (林间亲子自然写生与手作)",
+        "summary": "在植物园落叶林与日式庭园中席地而坐，用炭笔与植物蜡笔捕捉西北太平洋秋日自然风景。",
+        "organizer": "Bellevue Botanical Garden",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Bellevue Botanical Garden",
+          "address": "12001 Main St, Bellevue, WA 98005",
+          "city": "Bellevue",
+          "region": "eastside",
+          "googleMapsUrl": "https://maps.google.com/?q=Bellevue+Botanical+Garden"
+        },
+        "schedule": {
+          "startDate": "2026-12-13",
+          "endDate": "2026-12-13",
+          "timeSlot": "afternoon",
+          "displayTime": "12月13日 (周日) · 14:00–15:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "outdoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://bellevuebotanical.org",
+          "sourceName": "Bellevue Botanical Garden"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261213_4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3218,
+          47.6231
+        ]
+      },
+      "properties": {
+        "title": "Weekend Craft Station: Nature Prints (自然植物拓印手工坊)",
+        "summary": "结合社区绿地植物标本制作自然手作书签，锻炼孩子手部精细动作与色彩审美。",
+        "organizer": "Seattle Public Library",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "SPL - Capitol Hill Branch",
+          "address": "425 Harvard Ave E, Seattle, WA 98102",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Capitol+Hill+Branch+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-12-13",
+          "endDate": "2026-12-13",
+          "timeSlot": "afternoon",
+          "displayTime": "12月13日 (周日) · 13:30–15:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "street"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_spl_20261213_6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3831,
+          47.5612
+        ]
+      },
+      "properties": {
+        "title": "Baby Play & Learn (婴儿爬爬与感官探索)",
+        "summary": "为18个月以下婴儿及其照护者准备的感官地垫活动，提供安全的多材质教具与育儿交流环境。",
+        "organizer": "Seattle Public Library",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "SPL - West Seattle Branch",
+          "address": "2306 42nd Ave SW, Seattle, WA 98116",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=West+Seattle+Branch+Seattle+Public+Library"
+        },
+        "schedule": {
+          "startDate": "2026-12-13",
+          "endDate": "2026-12-13",
+          "timeSlot": "morning",
+          "displayTime": "12月13日 (周日) · 10:30–11:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool"
+          ],
+          "environment": "indoor",
+          "isFree": true,
+          "priceLabel": "免费入场",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://www.spl.org",
+          "sourceName": "西雅图公共图书馆 (SPL)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_museumofflight_20261213_4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3005,
+          47.5186
+        ]
+      },
+      "properties": {
+        "title": "Flight Explorer Weekend: Cockpit Discovery (少年机长座舱体验)",
+        "summary": "开放真实战斗机与民航驾驶舱供孩子登上操控位，退役飞行员志愿者现场答疑解惑。",
+        "organizer": "The Museum of Flight",
+        "category": "exploration_exp",
+        "location": {
+          "venueName": "The Museum of Flight",
+          "address": "9404 E Marginal Way S, Seattle, WA 98108",
+          "city": "Seattle",
+          "region": "south",
+          "googleMapsUrl": "https://maps.google.com/?q=The+Museum+of+Flight"
+        },
+        "schedule": {
+          "startDate": "2026-12-13",
+          "endDate": "2026-12-13",
+          "timeSlot": "afternoon",
+          "displayTime": "12月13日 (周日) · 13:00–15:30"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "含在门票内",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "free_lot"
+        },
+        "source": {
+          "originalUrl": "https://www.museumofflight.org",
+          "sourceName": "The Museum of Flight"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_ballardmarket_20261213_9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3838,
+          47.6678
+        ]
+      },
+      "properties": {
+        "title": "Ballard Sunday Market: Street Buskers & Crafts (巴拉德周日市集与手作探秘)",
+        "summary": "西雅图最热闹的露天市集之一，聚集大量本地独立手作匠人、街头魔术师与家庭友好摊位。",
+        "organizer": "Ballard Farmers Market",
+        "category": "festivals_markets",
+        "location": {
+          "venueName": "Ballard Farmers Market",
+          "address": "5300 Ballard Ave NW, Seattle, WA 98107",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Ballard+Farmers+Market"
+        },
+        "schedule": {
+          "startDate": "2026-12-13",
+          "endDate": "2026-12-13",
+          "timeSlot": "morning",
+          "displayTime": "12月13日 (周日) · 10:00–15:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "outdoor",
+          "isFree": true,
+          "priceLabel": "免费漫步",
+          "requiresRsvp": false,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "street"
+        },
+        "source": {
+          "originalUrl": "https://www.sfmamarkets.com/visit-ballard-farmers-market",
+          "sourceName": "Ballard Farmers Market"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_seattleaquarium_20261213_11",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3426,
+          47.6074
+        ]
+      },
+      "properties": {
+        "title": "Tide Pool Discovery & Ocean Pavilion (潮间带生物触摸与新馆探秘)",
+        "summary": "全新开放的海洋馆展区，孩子可亲自触摸海星与海葵，欣赏大型珊瑚礁生态与印太暖水鱼群。",
+        "organizer": "Seattle Aquarium",
+        "category": "nature_animals",
+        "location": {
+          "venueName": "Seattle Aquarium",
+          "address": "1483 Alaskan Way, Pier 59, Seattle, WA 98101",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=Seattle+Aquarium"
+        },
+        "schedule": {
+          "startDate": "2026-12-13",
+          "endDate": "2026-12-13",
+          "timeSlot": "morning",
+          "displayTime": "12月13日 (周日) · 10:30–12:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "preschool",
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "需预约门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.seattleaquarium.org",
+          "sourceName": "Seattle Aquarium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "evt_venue_mopop_20261213_13",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3483,
+          47.6215
+        ]
+      },
+      "properties": {
+        "title": "Sound Lab Jam Session for Kids (少儿音乐实验室即兴演奏体验)",
+        "summary": "配备真实电吉他、电子鼓、合成器与专业调音混音台的隔音小录音间，零门槛启发孩子音乐兴趣。",
+        "organizer": "Museum of Pop Culture (MoPOP)",
+        "category": "music_crafts",
+        "location": {
+          "venueName": "Museum of Pop Culture (MoPOP)",
+          "address": "325 5th Ave N, Seattle, WA 98109",
+          "city": "Seattle",
+          "region": "seattle",
+          "googleMapsUrl": "https://maps.google.com/?q=MoPOP"
+        },
+        "schedule": {
+          "startDate": "2026-12-13",
+          "endDate": "2026-12-13",
+          "timeSlot": "afternoon",
+          "displayTime": "12月13日 (周日) · 14:00–16:00"
+        },
+        "familyAttributes": {
+          "ageBuckets": [
+            "elementary"
+          ],
+          "environment": "indoor",
+          "isFree": false,
+          "priceLabel": "需购门票",
+          "requiresRsvp": true,
+          "strollerFriendly": true,
+          "hasChangingTable": true,
+          "parking": "paid_garage"
+        },
+        "source": {
+          "originalUrl": "https://www.mopop.org",
+          "sourceName": "Museum of Pop Culture (MoPOP)"
         }
       }
     }
